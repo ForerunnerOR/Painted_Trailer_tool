@@ -142,7 +142,14 @@ namespace Painted_Trailer_Tool
                 {
                     newSii = blankSii;
                     newSii = newSii.Replace("<trailer>", currentTrailer + "/chassis");
-                    newSii = newSii.Replace("<intname>", trailerNames[currentIndex].Replace("_", "."));
+                    if (currentTrailer == "willig/fuel_cistern")
+                    {
+                        newSii = newSii.Replace("<intname>", "willig.fuel_cistern");
+                    }
+                    else
+                    {
+                        newSii = newSii.Replace("<intname>", trailerNames[currentIndex].Replace("_", "."));
+                    }
                     newSii = newSii.Replace("<r>", colorR.ToString().Replace(",", "."));
                     newSii = newSii.Replace("<g>", colorG.ToString().Replace(",", "."));
                     newSii = newSii.Replace("<b>", colorB.ToString().Replace(",", "."));
@@ -176,6 +183,9 @@ namespace Painted_Trailer_Tool
 
         public void makeModOverride ()
         {
+            Directory.CreateDirectory(localpath + txtModName.Text + "/def/vehicle/trailer");
+            Directory.CreateDirectory(localpath + txtModName.Text + "/def/company");
+
             trailer tempTrailer = cmbOverrideTrailer.SelectedItem as trailer;
 
             string trailerDataPath = tempTrailer.filePath;
@@ -187,6 +197,10 @@ namespace Painted_Trailer_Tool
                 if (currentTrailer == "chemical_cistern")
                 {
                     newSii = newSii.Replace("<intname>", "chcistern");
+                }
+                else if (currentTrailer == "willig_fuel_cistern")
+                {
+                    newSii = newSii.Replace("<intname>", "willig.fuel_cistern");
                 }
                 else
                 {
@@ -201,6 +215,7 @@ namespace Painted_Trailer_Tool
                 }
                 Console.Write(currentTrailer + " has been written\n");
             }
+            currentIndex = 0;
             foreach (string currentTrailer in newTrailers)
             {
                 newSii = blankSii;
