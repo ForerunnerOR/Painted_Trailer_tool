@@ -136,6 +136,8 @@
             this.Controls.Add(this.lblExtraOptions);
             this.Controls.Add(this.txtModName);
             this.Controls.Add(this.lblModName);
+            this.MaximumSize = new System.Drawing.Size(402, 235);
+            this.MinimumSize = new System.Drawing.Size(402, 235);
             this.Name = "frmMain";
             this.Text = "Painted Trailer Tool";
             this.ResumeLayout(false);
