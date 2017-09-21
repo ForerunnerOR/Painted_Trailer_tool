@@ -1,0 +1,15 @@
+cement/chassis,cement
+chemical_cistern/chassis,chemical cistern
+food_cistern/chassis,food cistern
+krone/fridge/chassis,krone fridge
+fuel_cistern/chassis,fuel cistern
+krone/coolliner/chassis,krone coolliner
+krone/profiliner/chassis,krone profiliner
+livestock/chassis,livestock
+reefer/chassis,reefer
+reefer/chassis_a,reefer a
+schmitz/universal/chassis,schmitz universal
+schw_cistern_food/chassis.dlc_schwarzmuller,schw cistern food
+schw_curtain/chassis.dlc_schwarzmuller,schw curtain
+schw_reefer/chassis.dlc_schwarzmuller,schw reefer
+willig/fuel_cistern/chassis,willig fuel cistern

@@ -19,4 +19,16 @@ namespace Painted_Trailer_Tool
             Application.Run(new frmMain());
         }
     }
+
+    public class trailer
+    {
+        public string filePath { get; set; }
+        public string displayName { get; set; }
+
+        public override string ToString()
+        {
+            return displayName;
+        }
+    }
+
 }

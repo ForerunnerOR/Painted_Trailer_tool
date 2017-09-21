@@ -1,0 +1,37 @@
+﻿﻿trailer : trailer.<intname> 
+{
+	accessories[]: .<intname>.tchassis
+	accessories[]: .<intname>.paint_job
+	accessories[]: .<intname>.trwheel0
+	accessories[]: .<intname>.trwheel1
+	accessories[]: .<intname>.trwheel2
+}
+
+vehicle_accessory: .<intname>.tchassis
+{
+    	data_path: "/def/vehicle/trailer/<trailer>.sii"
+}
+
+vehicle_wheel_accessory: .<intname>.trwheel0
+{
+	offset: 0
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .<intname>.trwheel1
+{
+	offset: 2
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+}
+
+vehicle_wheel_accessory: .<intname>.trwheel2
+{
+	offset: 4
+    	data_path: "/def/vehicle/t_wheel/single.sii"
+} 
+
+vehicle_paint_job_accessory: .<intname>.paint_job
+{
+	base_color: (<r>, <g>, <b>)
+    	data_path: "/def/vehicle/trailer/cement/company_paint_job/default.sii"
+}

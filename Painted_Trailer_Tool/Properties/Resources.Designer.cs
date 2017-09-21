@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Painted_Trailer_Tool.Properties
-{
-
-
+namespace Painted_Trailer_Tool.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -22,49 +22,122 @@ namespace Painted_Trailer_Tool.Properties
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Painted_Trailer_Tool.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to cement/chassis.sii,cement
+        ///chemical_cistern/chassis.sii,chemical cistern
+        ///food_cistern/chassis.sii,food cistern
+        ///krone/fridge/chassis.sii,krone fridge
+        ///fuel_cistern/chassis.sii,fuel cistern
+        ///krone/coolliner/chassis.sii,krone coolliner
+        ///krone/profiliner/chassis.sii,krone profiliner
+        ///livestock/chassis.sii,livestock
+        ///reefer/chassis.sii,reefer
+        ///reefer/chassis_a.sii,reefer a
+        ///schmitz/universal/chassis.sii,schmitz universal
+        ///schw_cistern_food/chassis.dlc_schwarzmuller.sii,schw cistern food
+        ///schw_curtain/chassis.d [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string defChassis {
+            get {
+                return ResourceManager.GetString("defChassis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ﻿trailer : trailer.&lt;intname&gt; 
+        ///{
+        ///	accessories[]: .&lt;intname&gt;.tchassis
+        ///	accessories[]: .&lt;intname&gt;.paint_job
+        ///	accessories[]: .&lt;intname&gt;.trwheel0
+        ///	accessories[]: .&lt;intname&gt;.trwheel1
+        ///	accessories[]: .&lt;intname&gt;.trwheel2
+        ///}
+        ///
+        ///vehicle_accessory: .&lt;intname&gt;.tchassis
+        ///{
+        ///    	data_path: &quot;/def/vehicle/trailer/&lt;trailer&gt;.sii&quot;
+        ///}
+        ///
+        ///vehicle_wheel_accessory: .&lt;intname&gt;.trwheel0
+        ///{
+        ///	offset: 0
+        ///    	data_path: &quot;/def/vehicle/t_wheel/single.sii&quot;
+        ///}
+        ///
+        ///vehicle_wheel_accessory: .&lt;intname&gt;.trwheel1
+        ///{
+        ///	offset: 2
+        ///    	da [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string emptytrailer {
+            get {
+                return ResourceManager.GetString("emptytrailer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to trailer : trailer.krone.profiliner_d
+        ///{
+        ///	accessories[]: .krone.profiliner_d.tchassis
+        ///	accessories[]: .krone.profiliner_d.paint_job
+        ///	accessories[]: .krone.profiliner_d.trwheel0
+        ///	accessories[]: .krone.profiliner_d.trwheel1
+        ///	accessories[]: .krone.profiliner_d.trwheel2
+        ///
+        ///	slave_trailer: trailer.krone.proficarrier
+        ///}
+        ///
+        ///vehicle_accessory: .krone.profiliner_d.tchassis
+        ///{
+        ///    	data_path: &quot;/def/vehicle/trailer/krone/profiliner/chassis_d.sii&quot;
+        ///}
+        ///
+        ///vehicle_wheel_accessory: .krone.profiliner_d.trwheel0
+        ///{
+        ///	offset: 0
+        ///    	data_ [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string emptytrailer_double {
+            get {
+                return ResourceManager.GetString("emptytrailer_double", resourceCulture);
             }
         }
     }
